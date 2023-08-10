@@ -54,3 +54,15 @@ Example Results:
 
 AutoInstall Complete! Results: 11/15/19 11:59:04 | Internal 600M (SIM2) AT&T Band 2 RSRP:-100 DL:12.82Mbps UL:8.84Mbps | Internal 600M (SIM1) Verizon Band 13 RSRP:-88 DL:10.80Mbps UL:8.81Mbps | MC400LP6 (SIM1) Verizon Band 13 RSRP:-68 DL:9.59Mbps UL:19.46Mbps
 
+Lines to Modify
+===============
+Look for "Speedtest_settings" and look for following parameters:
+"port": None,
+"fwport": None,
+"host": "",
+						
+- For the port, change None to the value of the NetPerf server port (default 12865) NO (double)quotes around the port number
+- For the fwport (data port) change None to the value of the NetPerf server data port (default 12866) NO (double)quotes around the port number
+- For the destination host change "" to the name (or IP address) of the NetPerf host (enclose a name in double-quotes.
+
+
