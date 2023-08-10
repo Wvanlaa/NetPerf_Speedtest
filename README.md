@@ -65,4 +65,13 @@ Look for "Speedtest_settings" and look for following parameters:
 - For the fwport (data port) change None to the value of the NetPerf server data port (default 12866) NO (double)quotes around the port number
 - For the destination host change "" to the name (or IP address) of the NetPerf host (enclose a name in double-quotes.
 
+To sort on upload (uplink speed) rather than download look for this line:
+
+**sorted_results = sorted(self.sims, key=lambda x: self.sims[x]['download'], reverse=True)**
+And change *download* with *upload*
+
+Reference article on how to modify and re-pack ***https://customer.cradlepoint.com/s/article/NCOS-SDK-Developers-Guide***
+
+
+
 
