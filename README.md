@@ -28,12 +28,16 @@ netperf_speedtest - “AutoInstall” is a SIM Speedtest app designed to test TC
 
 •	MIN_DOWNLOAD_SPD – If no SIM download speed meets minimum, a FAILURE report is sent.  SIMs are still prioritized and slowest SIMs are disabled according to NUM_ACTIVE_SIMS.
 Default Value = 0.0
+
 •	MIN_UPLOAD_SPD – If no SIM upload speed meets minimum, a FAILURE report is sent.  SIMs are still prioritized and slowest SIMs are disabled according to NUM_ACTIVE_SIMS
 Default Value = 0.0
+
 •	SCHEDULE – Minutes between runs. 0=Only run at boot; 60=hourly; 1440=daily
 Default Value = 0
+
 •	NUM_ACTIVE_SIMS – Number of fastest SIMs to keep active. 0=all; do not disable any SIMs.
 Default Value = 0
+
 •	ONLY_RUN_ONCE – True means do not run if Boot2 has run on this device before. (common for install usage).
 Default Value = False
 
