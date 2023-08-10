@@ -57,8 +57,11 @@ AutoInstall Complete! Results: 11/15/19 11:59:04 | Internal 600M (SIM2) AT&T Ban
 Lines to Modify
 ===============
 Look for "Speedtest_settings" and look for following parameters:
+
 "port": None,
+
 "fwport": None,
+
 "host": "",
 						
 - For the port, change None to the value of the NetPerf server port (default 12865) NO (double)quotes around the port number
